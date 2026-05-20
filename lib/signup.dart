@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Signup extends StatelessWidget {
@@ -64,21 +65,22 @@ class Signup extends StatelessWidget {
             decoration: InputDecoration(
               fillColor: const Color.fromARGB(255, 230, 175, 240),
               filled: true,
-              suffixIcon: Icon(Icons.visibility),
-              hintText: "conform password",
+              suffixIcon: Icon( Icons.visibility),
+              hintText: "password",
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
                 borderSide: BorderSide(color: Colors.purple),
               ),
-            ),
               ),
+              ),
+          
               SizedBox(height: 30),
-              
+
               SizedBox(height: 55,
               width: 500,
 
-                child: ElevatedButton(onPressed: (){}, child: Text("sign up"),style:ElevatedButton.styleFrom(backgroundColor: const Color.fromARGB(255, 244, 243, 243),
-                foregroundColor: const Color.fromARGB(31, 10, 4, 4)
+                child: ElevatedButton(onPressed: (){}, child: Text("sign up"),style:ElevatedButton.styleFrom(backgroundColor:CupertinoColors.secondarySystemGroupedBackground,
+                foregroundColor: Colors.black
                 ) ,),
               ),
               

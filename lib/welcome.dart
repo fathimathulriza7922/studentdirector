@@ -1,0 +1,47 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_application_1/login.dart';
+
+class Welcome extends StatelessWidget {
+  const Welcome({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              "assets/download.jpg",
+            ),
+
+            SizedBox(height: 35),
+            SizedBox(height: 55,
+            width: 800,
+              child: ElevatedButton(
+                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>Login()));},
+                child: Text("login"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  foregroundColor: Colors.black,
+                ),
+              ),
+            ),
+            SizedBox(height: 55,
+            width: 800,
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Text("sign up"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  foregroundColor: Colors.black,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
