@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "972732596176",
+    "project_id": "studentdirector-fde32",
+    "storage_bucket": "studentdirector-fde32.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972732596176:android:fc04c2e1b8a7abef0c83d5",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD41oRYH8BcqiyjiVTG7EibRVpgt452vUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

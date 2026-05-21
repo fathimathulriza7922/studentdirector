@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/signup.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -47,7 +48,18 @@ class Login extends StatelessWidget {
             ),
           ),
           ElevatedButton(onPressed: () {}, child: Text("Login")),
+          Row(mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text("dont have a account", style: TextStyle(color: Colors.amber),),
+              GestureDetector(onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Signup() ));
+              },
+                child: Text("sign up", style: TextStyle(color: Colors.amberAccent,fontWeight: FontWeight.bold),)),
+            ],
+
+          )
         ],
+
       ),
     );
   }

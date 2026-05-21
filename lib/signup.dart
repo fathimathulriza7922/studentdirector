@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/login.dart';
 
 class Signup extends StatelessWidget {
   const Signup({super.key});
@@ -83,7 +84,14 @@ class Signup extends StatelessWidget {
                 foregroundColor: Colors.black
                 ) ,),
               ),
-              
+             Row(mainAxisAlignment: MainAxisAlignment.center,
+             children: [
+              Text("already have a account",style: TextStyle(color: Colors.amberAccent),),
+              GestureDetector(onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Login()));
+              },
+                child: Text("login",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),))
+             ],)
             
             
 

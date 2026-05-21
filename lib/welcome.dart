@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/login.dart';
+import 'package:flutter_application_1/signup.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
@@ -31,7 +32,7 @@ class Welcome extends StatelessWidget {
             SizedBox(height: 55,
             width: 800,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>Signup()));},
                 child: Text("sign up"),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.white,
