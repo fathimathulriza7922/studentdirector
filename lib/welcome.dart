@@ -22,21 +22,22 @@ class Welcome extends StatelessWidget {
             width: 800,
               child: ElevatedButton(
                 onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>Login()));},
-                child: Text("login"),
+                child: Text("login",style: TextStyle(fontSize: 20 ),),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.white,
+                  backgroundColor: const Color.fromARGB(255, 240, 250, 95),
                   foregroundColor: Colors.black,
                 ),
               ),
             ),
+            SizedBox(height: 30,),
             SizedBox(height: 55,
             width: 800,
               child: ElevatedButton(
                 onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>Signup()));},
-                child: Text("sign up"),
+                child: Text("sign up",style: TextStyle(fontSize: 20),),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  foregroundColor: Colors.black,
+                  backgroundColor: const Color.fromARGB(255, 215, 225, 62),
+                  foregroundColor: const Color.fromARGB(255, 14, 0, 0),
                 ),
               ),
             ),
